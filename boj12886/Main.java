@@ -15,8 +15,8 @@ public class Main {
 	static boolean[][] chk = new boolean[1001][1001];
 	static boolean found;
 	
-	static boolean inrange(int a, int b, int c) {
-		return a <= 1000 && b <= 1000 && c <= 1000;
+	static boolean inrange(int a, int b) {
+		return a <= 1000 && b <= 1000;
 	}
 	
 	static int[] step(int a, int b) {
@@ -43,13 +43,13 @@ public class Main {
 		int[] r;
 		
 		r = step(a, b);
-		if (r != null && inrange(r[0], r[1], c))
+		if (r != null && inrange(r[0], r[1]))
 			dfs(r[0], r[1]);
 		r = step(a, c);
-		if (r != null && inrange(r[0], r[1], b))
+		if (r != null && inrange(r[0], r[1]))
 			dfs(r[0], r[1]);
 		r = step(b, c);
-		if (r != null && inrange(r[0], r[1], a))
+		if (r != null && inrange(r[0], r[1]))
 			dfs(r[0], r[1]);
 	}
 	
