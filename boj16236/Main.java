@@ -5,6 +5,11 @@ import java.util.Collections;
 import java.util.LinkedList;
 import java.util.Scanner;
 
+// 아기상어
+// https://www.acmicpc.net/problem/16236
+// 내가 갈수 있는곳을 모두 탐색한다음
+// 문제의 조건에 맞게 소트후 이동
+
 class Node {
 	int y;
 	int x;
