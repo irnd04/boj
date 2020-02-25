@@ -1,47 +1,30 @@
 package boj1182;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
 	
 	static int N;
 	static int r;
-	static int[] ans;
-	static int[] input;
-	static boolean first = true;
-	static int c;
+	static int res;
+	static int[] arr;
 	
-	static void comb2(int p) {
-		if (p == N) {
-			if (first) { first = false; return; } // 공집합처리 모든것이 0으로 이루어짐
-			int sum = 0;
-			for (int i = 0; i < N; i++) {
-				if (ans[i] == 1) sum += input[i];
-			}
-			if (sum == r) c++;
-			return;
-		}
-		ans[p] = 0;
-		comb2(p + 1);
-		ans[p] = 1;
-		comb2(p + 1);
-	}
-		
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		N = sc.nextInt();
-		ans = new int[N];
-		input = new int[N];
 		r = sc.nextInt();
-		for (int i = 0; i < N; i++)
-			input[i] = sc.nextInt();
-		comb2(0);
-		System.out.println(c);
+		arr = new int[N];
+		for (int i = 0; i < N; i++) arr[i] = sc.nextInt();
+		for (int i = 1; i < (1 << N); i++) {
+			int sum = 0;
+			for (int j = 0; j < N; j++) {
+				if ((i & (1 << j)) > 0) {
+					sum += arr[j];
+				}
+			}
+			if (r == sum) res++; 
+		}
+		System.out.println(res);
 	}
+	
 }
-/*
-5 0
--7 -3 -2 5 8
-
-*/
