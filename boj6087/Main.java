@@ -3,6 +3,17 @@ package boj6087;
 import java.util.LinkedList;
 import java.util.Scanner;
 
+/*
+https://www.acmicpc.net/problem/6087
+레이저통신
+
+방향이 바뀔때마다 디스트에 값을 증가하여 기록하는데 어떤방향인지도 포함을 하여 기록을해야한다.
+디스트에 방향을 기록하지않으면 방향값이 손실되어 값이 다르게 출력될수 있다.
+(아래 예제를 입력하여 보면 방향값이 왜 필요한지 알수있다.)
+
+C에 도착했을때에는 방향에 따라 틀린값이 먼저 도착할 수 있기때문에 도착하는것 모두를 비교하여 최소값을 리턴한다.
+ */
+
 class Node {
 	int y;
 	int x;
