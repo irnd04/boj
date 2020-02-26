@@ -3,8 +3,8 @@ package boj11047;
 import java.util.Scanner;
 
 // https://www.acmicpc.net/problem/11047
-// µ¿Àü 0
-// ±×¸®µğ¹®Á¦
+// ë™ì „ 0
+// ê·¸ë¦¬ë””ë¬¸ì œ
 
 public class Main {
 	
