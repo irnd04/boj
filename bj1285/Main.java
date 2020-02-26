@@ -2,6 +2,12 @@ package bj1285;
 
 import java.util.Scanner;
 
+// https://www.acmicpc.net/problem/1285
+// 동전 뒤집기
+// 브루트포스문제
+// 행에 대해서 모든방법을 다시도함 2^20
+// 시도하고 난후 열은 뒤집을지 말지만 결정하면된다.
+
 public class Main {
 	
 	static int N;
