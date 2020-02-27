@@ -32,7 +32,6 @@ class Node {
 
 public class Main {
 	
-	static int[] arr = new int[] {1, 3, 5, 7, 9};
 	static int N, K;
 	static TreeMap<Integer, Integer> bag = new TreeMap<Integer, Integer>();
 	static ArrayList<Node> jewels = new ArrayList<Node>();
