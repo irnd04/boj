@@ -42,7 +42,7 @@ public class Main {
 		inp = new int[N];
 		res = new int[N];
 		resi = new int[N];
-		prev = new int[N + 1];
+		prev = new int[N];
 		for (int i = 0; i < N; i++) inp[i] = sc.nextInt();
 		
 		for (int i = 0; i < N; i++) {
