@@ -234,3 +234,4 @@ fabric.properties
 .idea/modules.xml
 .idea/vcs.xml
 boj.iml
+.idea/encodings.xml

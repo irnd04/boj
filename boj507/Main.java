@@ -1,7 +1,6 @@
 package boj507;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Scanner;
 
 class Node {
@@ -19,7 +18,7 @@ class Node {
 }
 
 public class Main {
-	
+
 	static int N = 9;
 	static int M;
 	static boolean[][] ga = new boolean[10][10]; // y행에 x가 있는지?
