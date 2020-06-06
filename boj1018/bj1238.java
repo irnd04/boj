@@ -1,9 +1,6 @@
 package boj1018;
 
-import java.util.Arrays;
-import java.util.LinkedList;
-import java.util.PriorityQueue;
-import java.util.Scanner;
+import java.util.*;
 
 class Node {
 	int v;
@@ -30,7 +27,7 @@ public class bj1238 {
 	static int INF = Integer.MAX_VALUE;
 	
 	static void dijk(int s) {
-		PriorityQueue<Node> q = new PriorityQueue<Node>((a, b) -> a.cost - b.cost);
+		PriorityQueue<Node> q = new PriorityQueue<>(Comparator.comparingInt(a -> a.cost));
 		for (int i = 1; i <= N; i++)
 			dist[i] = INF;
 		dist[s] = 0;
